@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#131313",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Film Production</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="bg-white fixed top-0 left-0 right-0">
+        <div
+          class="font-bebas flex justify-between items-center h-16 w-full max-w-7xl mx-auto px-4"
+        >
+          <h1 class="text-2xl">Film Production</h1>
+          <ul class="flex text-lg gap-8">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Our movies</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section
+        class="bg-slate-300 h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover"
+      >
+        <div class="h-full max-w-7xl mx-auto px-5 flex items-center">
+          <div class="text-white">
+            <h4 class="font-bebas text-xl">Movie production studio</h4>
+            <h1 class="font-bebas text-7xl">Films MAde to <br><span class="text-yellow">Perfection</span></h1>
+            <p class="max-w-xl mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <button class="font-bebas border-2 border-white py-2 px-3 text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- about us section -->
+      <section class="py-40">
+        <div class="border-2 boder-black w-full max-w-7xl mx-auto">
+          <div class="md:flex p-5 mb-10">
+            <div class="w-full md:w-1/2 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end">
+              <h1 class="text-2xl font-bebas bg-white text-black w-full mx-5 py-3 rounded-md bg-center shadow-lg -mb-7 text-center">23 YEARS of EXPERIENCE</h1>
+            </div>
+            <div class="w-full md:w-1/2 p-5">
+              <h2 class="font-bebas text-lg">ABOUT US</h2>
+              <h1 class="font-bebas text-7xl">FIlming Experience <br>Just Got better</h1>
+              <p class="font-montserrat mb-10">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p>
+              <button class="font-bebas border-2 border-black text-black py-2 px-3 text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-5">
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-2"></div>
+              <h1 class="text-6xl font-bebas">OUR VISION</h1>
+              <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- movie collection section -->
+      <section class="bg-gray py-20 p-5">
+        <div class="text-white font-bebas w-full max-w-7xl mx-auto mb-10">
+          <h2 class="text-lg">OUR MOVIES</h2>
+          <div class="flex justify-between items-center">
+            <h1 class="text-7xl">Movie collection</h1>
+            <button class=" border-2 border-white text-white py-2 px-3 text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover More</button>
+          </div>
+        </div>
+        <div class="grid transition-all md:grid-cols-2 lg:grid-cols-4  w-full max-w-7xl mx-auto gap-5">
+          <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+            <div class="group bg-[url('./images/inception.jpg')] h-full bg-cover flex justify-center items-center">
+              <h1 class="text-white font-bebas text-4xl hidden group-hover:block">INCEPTION</h1>  
+            </div>
+          </div>
+          <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+            <div class=" bg-[url('./images/fractured.jpg')] h-full bg-cover"></div>
+          </div>
+          <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+            <div class=" bg-[url('./images/interstellar.jpg')] h-full bg-cover"></div>
+          </div>
+          <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+            <div class=" bg-[url('./images/tenet.jpg')] h-full bg-cover"></div>
+          </div>
+        </div>
+      </section>
+      <!-- service section -->
+      <section class="py-40 p-5 w-full max-w-7xl mx-auto">
+        <div class="text-black font-bebas text-center">
+          <h5>services</h5>
+          <h1 class="text-7xl">what we offer</h1>
+        </div>
+        <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/camera.png" alt="">
+            <h5 class="font-bebas">movies director</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/3d-glasss.png" alt="">
+            <h5 class="font-bebas">3D MOVIES</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/director-chair.png" alt="">
+            <h5 class="font-bebas">Film maker</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/film.png" alt="">
+            <h5 class="font-bebas">Studio Production</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/theater.png" alt="">
+            <h5 class="font-bebas">Drama Movies</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/rim.png" alt="">
+            <h5 class="font-bebas">Rolling Production</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/cut-board.png" alt="">
+            <h5 class="font-bebas">Movie Production</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+          <div class="text-center h-[240px] border border-gray p-3">
+            <img class="h-16 w-16 mx-auto my-4" src="./images/icons/count-down.png" alt="">
+            <h5 class="font-bebas">actor action</h5>
+            <p class="font-montserrat mt-4">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-[url('./images/footer-bg.jpg')] bg-cover text-center text-white">
+      <div class="py-14">
+        <h1 class="font-bebas text-5xl">Film Production</h1>
+        <h5 class="font-bebas text-xl py-5">next level experience</h5>
+        <p class="font-montserrat">Feugiat nibh litora semper proin nullam facilisi <br>volutpat ex ullamcorper.</p>
+      </div>
+      <div class="font-montserrat py-10">
+        <p>Copyright © 2021 Jhaka Naka Production, All rights reserved. Present by Mir Hussain</p>
+      </div>
+    </footer>
+  </body>
+</html>
